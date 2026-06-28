@@ -61,22 +61,44 @@ header {
     color: #ff6b35;
 }
 
-/* Hero Section */
+/* HERO: background image + overlay */
 .hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    position: relative;
+    background-image: url('assets/images/roman-banner.jpg');
+    background-size: cover;
+    background-position: center;
     color: white;
-    padding: 100px 0;
+    padding: 140px 0; /* slightly taller to suit banner height */
     text-align: center;
+    overflow: hidden;
 }
 
+/* dark overlay to keep text readable */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    z-index: 0;
+}
+
+/* keep the container content above the overlay */
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* tweak hero text for contrast over the banner */
 .hero h2 {
     font-size: 3rem;
     margin-bottom: 1rem;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.6);
 }
 
 .hero p {
-    font-size: 1.3rem;
-    margin-bottom: 2rem;
+    font-size: 1.25rem;
+    margin-bottom: 1.75rem;
+    text-shadow: 0 1px 6px rgba(0,0,0,0.6);
 }
 
 .call-now-button {
@@ -224,6 +246,10 @@ footer {
     .nav-links {
         gap: 1rem;
         font-size: 0.9rem;
+    }
+
+    .hero {
+        padding: 100px 0;
     }
 
     .hero h2 {
