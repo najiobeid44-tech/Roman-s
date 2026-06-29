@@ -61,7 +61,7 @@ body {
 header {
     background-color: #1a1a1a;
     color: white;
-    padding: 1rem 0;
+    padding: 0.75rem 0;
     position: sticky;
     top: 0;
     z-index: 200;
@@ -81,17 +81,60 @@ header {
     width: 100%;
 }
 
-.logo {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #ff6b35;
+/* Modern Logo Styling */
+.logo-wrapper {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 
-.logo i {
-    font-size: 2rem;
+.logo-wrapper:hover {
+    opacity: 0.9;
+}
+
+.logo-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #ff6b35 0%, #e55a24 100%);
+    border-radius: 10px;
+    font-size: 1.8rem;
+    color: white;
+    box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+    transition: all 0.3s ease;
+}
+
+.logo-wrapper:hover .logo-icon {
+    transform: scale(1.05) rotate(-5deg);
+    box-shadow: 0 6px 16px rgba(255, 107, 53, 0.4);
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    line-height: 1.2;
+}
+
+.logo-main {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #ff6b35;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: -0.5px;
+}
+
+.logo-sub {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
 }
 
 .nav-links {
@@ -105,6 +148,7 @@ header {
     text-decoration: none;
     transition: color 0.3s ease;
     font-weight: 500;
+    font-size: 0.95rem;
 }
 
 .nav-links a:hover {
@@ -156,6 +200,7 @@ header {
     font-weight: 700;
     text-shadow: 0 3px 15px rgba(0, 0, 0, 0.7);
     letter-spacing: -1px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .hero-subtitle {
@@ -217,6 +262,7 @@ header {
     color: #1a1a1a;
     position: relative;
     font-weight: 700;
+    font-family: 'Poppins', sans-serif;
 }
 
 .section-title::after {
@@ -271,6 +317,8 @@ header {
     font-size: 1.4rem;
     margin-bottom: 1rem;
     color: #1a1a1a;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
 }
 
 .why-card p {
@@ -337,6 +385,8 @@ header {
     display: flex;
     align-items: center;
     gap: 0.8rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
 }
 
 .service-card h3 i {
@@ -458,6 +508,7 @@ header {
     justify-content: space-between;
     align-items: center;
     transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
 }
 
 .faq-question:hover {
@@ -540,6 +591,8 @@ header {
     font-size: 1.2rem;
     color: #1a1a1a;
     margin-bottom: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
 }
 
 .contact-item p,
@@ -587,6 +640,8 @@ header {
     font-size: 1.2rem;
     margin-bottom: 1.2rem;
     color: #ff6b35;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
 }
 
 .footer-section p {
@@ -685,9 +740,39 @@ header {
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+    .logo-main {
+        font-size: 1.2rem;
+    }
+
+    .logo-sub {
+        font-size: 0.7rem;
+    }
+
+    .logo-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.6rem;
+    }
+}
+
 @media (max-width: 768px) {
     .menu-toggle {
         display: flex;
+    }
+
+    .logo-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.4rem;
+    }
+
+    .logo-main {
+        font-size: 1.1rem;
+    }
+
+    .logo-sub {
+        font-size: 0.65rem;
     }
 
     .nav-links {
@@ -768,8 +853,27 @@ header {
 }
 
 @media (max-width: 480px) {
-    .logo span {
-        display: none;
+    header {
+        padding: 0.6rem 0;
+    }
+
+    .logo-wrapper {
+        gap: 0.7rem;
+    }
+
+    .logo-icon {
+        width: 38px;
+        height: 38px;
+        font-size: 1.2rem;
+    }
+
+    .logo-main {
+        font-size: 1rem;
+    }
+
+    .logo-sub {
+        font-size: 0.6rem;
+        letter-spacing: 0.3px;
     }
 
     .hero-title {
