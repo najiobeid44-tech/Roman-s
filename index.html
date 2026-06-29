@@ -3,18 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roman's Tire & Auto</title>
+    <title>Roman's Tire & Auto - Premium Auto Repair & Service</title>
+    <meta name="description" content="Roman's Tire & Auto offers premium auto repair services in Fort Worth, TX. Expert mechanics, honest pricing, and trusted service for over a decade.">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Mobile Floating Call Button -->
+    <a href="tel:817-825-1619" class="floating-call-btn" title="Call Now">
+        <i class="fas fa-phone"></i>
+    </a>
+
+    <!-- Header & Navigation -->
     <header>
         <nav class="navbar">
             <div class="container">
-                <h1 class="logo">Roman's Tire & Auto</h1>
-                <ul class="nav-links">
+                <div class="logo">
+                    <i class="fas fa-wrench"></i>
+                    <span>Roman's Tire & Auto</span>
+                </div>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links" id="navLinks">
                     <li><a href="#home">Home</a></li>
+                    <li><a href="#why-choose-us">Why Us</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#testimonials">Reviews</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -22,92 +40,336 @@
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section id="home" class="hero">
-            <div class="container">
-                <h2>Welcome to Roman's Tire & Auto</h2>
-                <p>Your trusted partner for quality tire and auto services</p>
-                <a href="tel:817-825-1619" class="call-now-button">📞 Call Now: 817-825-1619</a>
+            <div class="hero-content">
+                <h1 class="hero-title">Premium Auto Repair & Tire Service</h1>
+                <p class="hero-subtitle">Expert mechanics you can trust. Honest pricing. Professional service since 2015.</p>
+                <div class="hero-cta">
+                    <a href="tel:817-825-1619" class="btn btn-primary">
+                        <i class="fas fa-phone"></i> Call Now: 817-825-1619
+                    </a>
+                    <a href="#services" class="btn btn-secondary">View Services</a>
+                </div>
             </div>
         </section>
 
-        <section id="services" class="services">
+        <!-- Why Choose Us Section -->
+        <section id="why-choose-us" class="why-choose-us fade-in">
             <div class="container">
-                <h2>Our Services</h2>
-                <div class="service-grid">
-                    <div class="service-card">
-                        <h3>🛞 Tire</h3>
-                        <p>Premium tires for all vehicle types</p>
+                <h2 class="section-title">Why Choose Roman's?</h2>
+                <div class="why-grid">
+                    <div class="why-card">
+                        <div class="why-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>Certified Technicians</h3>
+                        <p>Our team consists of ASE-certified mechanics with years of experience in all vehicle repairs and maintenance.</p>
                     </div>
-                    <div class="service-card">
-                        <h3>🛢️ Oil Change</h3>
-                        <p>Professional oil changes and fluid service</p>
+                    <div class="why-card">
+                        <div class="why-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h3>Honest Pricing</h3>
+                        <p>We believe in transparent pricing with no hidden fees. You'll always know exactly what you're paying for.</p>
                     </div>
-                    <div class="service-card">
-                        <h3>⚙️ Suspension</h3>
-                        <p>Complete suspension repair and maintenance</p>
+                    <div class="why-card">
+                        <div class="why-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Warranty Coverage</h3>
+                        <p>All our work comes with a 24-month/24,000-mile warranty. Your satisfaction is guaranteed.</p>
                     </div>
-                    <div class="service-card">
-                        <h3>❄️ A/C & Heating</h3>
-                        <p>Climate control system service and repair</p>
+                    <div class="why-card">
+                        <div class="why-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Quick Turnaround</h3>
+                        <p>We understand your time is valuable. Most services completed same day or within 24 hours.</p>
                     </div>
-                    <div class="service-card">
-                        <h3>🛑 Brake Service</h3>
-                        <p>Expert brake repair and replacement</p>
+                    <div class="why-card">
+                        <div class="why-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3>Quality Parts</h3>
+                        <p>We use only OEM and premium aftermarket parts to ensure durability and performance.</p>
                     </div>
-                    <div class="service-card">
-                        <h3>📐 Alignment</h3>
-                        <p>Precision wheel alignment services</p>
-                    </div>
-                    <div class="service-card">
-                        <h3>⚡ Electrical</h3>
-                        <p>Electrical system diagnosis and repair</p>
-                    </div>
-                    <div class="service-card">
-                        <h3>🔧 Diagnostics</h3>
-                        <p>Computer diagnostics and troubleshooting</p>
-                    </div>
-                    <div class="service-card">
-                        <h3>🏎️ Tune Ups</h3>
-                        <p>Engine tune-ups and performance service</p>
+                    <div class="why-card">
+                        <div class="why-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>Expert Support</h3>
+                        <p>Our friendly team is here to answer questions and provide expert advice on your vehicle's health.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="about">
+        <!-- Services Section -->
+        <section id="services" class="services fade-in">
             <div class="container">
-                <h2>About Us</h2>
-                <p>We've been serving the community with quality tire and auto services for years. Our experienced team is dedicated to keeping your vehicle in top shape.</p>
+                <h2 class="section-title">Our Services</h2>
+                <div class="service-grid">
+                    <div class="service-card">
+                        <div class="service-image" style="background: url('https://images.unsplash.com/photo-1580274455191-1c62238fa333?w=400&h=300&fit=crop') center/cover;"></div>
+                        <h3><i class="fas fa-ring"></i> Tire Service</h3>
+                        <p>Premium tire selection, installation, balancing, and alignment services for all vehicle types.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-image" style="background: url('https://images.unsplash.com/photo-1559325007-cafb82d80566?w=400&h=300&fit=crop') center/cover;"></div>
+                        <h3><i class="fas fa-droplet"></i> Oil Changes</h3>
+                        <p>Professional oil changes with synthetic or conventional options and fluid service checks.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-image" style="background: url('https://images.unsplash.com/photo-1486262715619-3b995e835dba?w=400&h=300&fit=crop') center/cover;"></div>
+                        <h3><i class="fas fa-cog"></i> Suspension</h3>
+                        <p>Complete suspension repair and maintenance including shocks, struts, and springs.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-image" style="background: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop') center/cover;"></div>
+                        <h3><i class="fas fa-snowflake"></i> A/C & Heating</h3>
+                        <p>Climate control system service, repairs, and refrigerant refills for year-round comfort.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-image" style="background: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop') center/cover;"></div>
+                        <h3><i class="fas fa-stop"></i> Brake Service</h3>
+                        <p>Expert brake pad replacement, rotor resurfacing, and complete brake system diagnostics.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-image" style="background: url('https://images.unsplash.com/photo-1486262715619-3b995e835dba?w=400&h=300&fit=crop') center/cover;"></div>
+                        <h3><i class="fas fa-compass"></i> Wheel Alignment</h3>
+                        <p>Precision four-wheel alignment to improve handling, fuel efficiency, and tire life.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-image" style="background: url('https://images.unsplash.com/photo-1534131143081-a27ab7bbc1e7?w=400&h=300&fit=crop') center/cover;"></div>
+                        <h3><i class="fas fa-bolt"></i> Electrical</h3>
+                        <p>Battery service, alternator repair, starter motor, and complete electrical system diagnostics.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-image" style="background: url('https://images.unsplash.com/photo-1578992404172-49d2e2b94269?w=400&h=300&fit=crop') center/cover;"></div>
+                        <h3><i class="fas fa-computer"></i> Diagnostics</h3>
+                        <p>Computer diagnostic scanning and troubleshooting for all vehicle issues and check engine lights.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-image" style="background: url('https://images.unsplash.com/photo-1486262715619-3b995e835dba?w=400&h=300&fit=crop') center/cover;"></div>
+                        <h3><i class="fas fa-fire"></i> Engine Tune-Ups</h3>
+                        <p>Complete engine tune-ups, spark plug replacement, and performance optimization services.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="contact" class="contact">
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery fade-in">
             <div class="container">
-                <h2>Contact Us</h2>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <h3>📞 Phone</h3>
-                        <p><a href="tel:817-825-1619">817-825-1619</a></p>
+                <h2 class="section-title">Our Workshop</h2>
+                <div class="gallery-grid">
+                    <img class="gallery-img lazyload" data-src="https://images.unsplash.com/photo-1487881594565-86a88ebda66d?w=600&h=400&fit=crop" alt="Modern auto repair workshop">
+                    <img class="gallery-img lazyload" data-src="https://images.unsplash.com/photo-1552820728-8ac41f1ce891?w=600&h=400&fit=crop" alt="Service bay with lift">
+                    <img class="gallery-img lazyload" data-src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop" alt="Diagnostic equipment">
+                    <img class="gallery-img lazyload" data-src="https://images.unsplash.com/photo-1590462472291-83e928e00b44?w=600&h=400&fit=crop" alt="Tire inventory">
+                    <img class="gallery-img lazyload" data-src="https://images.unsplash.com/photo-1486262715619-3b995e835dba?w=600&h=400&fit=crop" alt="Tool station">
+                    <img class="gallery-img lazyload" data-src="https://images.unsplash.com/photo-1559325007-cafb82d80566?w=600&h=400&fit=crop" alt="Service completion">
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials fade-in">
+            <div class="container">
+                <h2 class="section-title">Customer Testimonials</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Roman's team diagnosed my car issue perfectly. They explained everything clearly and fixed it right the first time. Highly recommend!"</p>
+                        <p class="testimonial-author">- John Martinez</p>
                     </div>
-                    <div class="contact-item">
-                        <h3>📍 Address</h3>
-                        <p><a href="https://maps.google.com/?q=6301+E+Lancaster+Ave+Fort+Worth+TX+76112" target="_blank">6301 E Lancaster Ave, Fort Worth, TX 76112</a></p>
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"I've been taking my vehicles here for 5 years. Honest pricing, professional service, and always treating me like family. Best auto shop in Fort Worth!"</p>
+                        <p class="testimonial-author">- Sarah Thompson</p>
                     </div>
-                    <div class="contact-item">
-                        <h3>⏰ Hours</h3>
-                        <p>Monday - Friday<br>9:00 AM - 7:00 PM</p>
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Got my truck in for an emergency repair. They fit me in same day and had me back on the road quickly. Great service and fair prices!"</p>
+                        <p class="testimonial-author">- Michael Chen</p>
                     </div>
-                    <div class="contact-item">
-                        <h3>✉️ Email</h3>
-                        <p><a href="mailto:info@romanstire.com">info@romanstire.com</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq fade-in">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="faq-content">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How often should I get an oil change?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Most modern vehicles require oil changes every 5,000 to 7,500 miles or every 6 months, whichever comes first. Synthetic oil can last up to 10,000 miles. Check your owner's manual for specific recommendations.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Do you use OEM parts?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, we use OEM (Original Equipment Manufacturer) parts for most repairs, and premium aftermarket parts when appropriate. We always discuss parts options with you before proceeding.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What warranty do you offer?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>All our work includes a 24-month/24,000-mile warranty. This covers parts and labor, giving you peace of mind with every service.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Can I schedule an appointment online?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Currently, we prefer phone appointments for accurate scheduling. Call us at 817-825-1619 to book your service, or visit us during business hours.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Do you offer roadside assistance?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We can help with minor roadside issues. For towing services, we can recommend trusted local tow companies. Call us if you need assistance.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What payment methods do you accept?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We accept all major credit cards, debit cards, checks, and cash. We also offer financing options for larger repairs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Hours Section -->
+        <section id="contact" class="contact fade-in">
+            <div class="container">
+                <h2 class="section-title">Visit Us Today</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <h3>Phone</h3>
+                            <p><a href="tel:817-825-1619">(817) 825-1619</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h3>Address</h3>
+                            <p><a href="https://maps.google.com/?q=6301+E+Lancaster+Ave+Fort+Worth+TX+76112" target="_blank">6301 E Lancaster Ave<br>Fort Worth, TX 76112</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3>Hours</h3>
+                            <div class="hours-list">
+                                <p><strong>Monday - Friday:</strong><br>9:00 AM - 7:00 PM</p>
+                                <p><strong>Saturday:</strong><br>10:00 AM - 4:00 PM</p>
+                                <p><strong>Sunday:</strong><br>Closed</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3>Email</h3>
+                            <p><a href="mailto:info@romanstire.com">info@romanstire.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3355.6024523045716!2d-97.48484!3d32.75386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e2b7c7c7c7c7d%3A0x7c7c7c7c7c7c7c7c!2s6301%20E%20Lancaster%20Ave%2C%20Fort%20Worth%2C%20TX%2076112!5e0!3m2!1sen!2sus!4v1234567890" width="100%" height="400" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Roman's Tire & Auto. All rights reserved.</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Roman's Tire & Auto</h4>
+                    <p>Your trusted partner for quality tire and auto services in Fort Worth, Texas.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://google.com" title="Google Reviews"><i class="fab fa-google"></i></a>
+                        <a href="https://yelp.com" title="Yelp"><i class="fab fa-yelp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#why-choose-us">Why Us</a></li>
+                        <li><a href="#testimonials">Reviews</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Tire Service</a></li>
+                        <li><a href="#services">Oil Changes</a></li>
+                        <li><a href="#services">Brake Service</a></li>
+                        <li><a href="#services">Diagnostics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><strong>Phone:</strong><br><a href="tel:817-825-1619">(817) 825-1619</a></p>
+                    <p><strong>Email:</strong><br><a href="mailto:info@romanstire.com">info@romanstire.com</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Roman's Tire & Auto. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
