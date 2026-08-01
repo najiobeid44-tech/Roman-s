@@ -256,7 +256,7 @@ header {
 
 /* Why Choose Us Section */
 .why-choose-us {
-    background: linear-gradient(135deg, #f5f5f5 0%, #efefef 100%);
+    background: linear-gradient(135deg, #fff5e8 0%, #ffe8d8 100%);
     padding: 100px 0;
 }
 
@@ -292,13 +292,13 @@ header {
     padding: 2rem;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.1);
     transition: all 0.3s ease;
 }
 
 .why-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 8px 25px rgba(255, 107, 53, 0.15);
 }
 
 .why-icon {
@@ -365,7 +365,7 @@ header {
 /* Gallery Section */
 .gallery {
     padding: 100px 0;
-    background: linear-gradient(135deg, #efefef 0%, #e8e8e8 100%);
+    background: linear-gradient(135deg, #fff5e8 0%, #ffe8d8 100%);
 }
 
 .gallery-grid {
@@ -381,7 +381,7 @@ header {
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.1);
 }
 
 .gallery-img:hover {
@@ -402,7 +402,7 @@ header {
 }
 
 .testimonial-card {
-    background: linear-gradient(135deg, #f5f5f5 0%, #f0f0f0 100%);
+    background: linear-gradient(135deg, #fff5e8 0%, #ffe8d8 100%);
     padding: 2rem;
     border-radius: 10px;
     border-left: 4px solid #ff6b35;
@@ -410,7 +410,7 @@ header {
 }
 
 .testimonial-card:hover {
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 20px rgba(255, 107, 53, 0.15);
     transform: translateY(-3px);
 }
 
@@ -435,7 +435,7 @@ header {
 /* FAQ Section */
 .faq {
     padding: 100px 0;
-    background: linear-gradient(135deg, #efefef 0%, #e8e8e8 100%);
+    background: linear-gradient(135deg, #fff5e8 0%, #ffe8d8 100%);
 }
 
 .faq-content {
@@ -448,7 +448,7 @@ header {
     margin-bottom: 1rem;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 10px rgba(255, 107, 53, 0.08);
 }
 
 .faq-question {
@@ -468,7 +468,7 @@ header {
 }
 
 .faq-question:hover {
-    background-color: #f5f5f5;
+    background-color: #fffaf4;
     color: #ff6b35;
 }
 
@@ -490,7 +490,7 @@ header {
 .faq-item.active .faq-answer {
     max-height: 500px;
     padding: 1.5rem;
-    background-color: #f5f5f5;
+    background-color: #fffaf4;
 }
 
 .faq-answer p {
@@ -520,14 +520,15 @@ header {
 .contact-item {
     text-align: center;
     padding: 2rem;
-    background: linear-gradient(135deg, #f5f5f5 0%, #efefef 100%);
+    background: linear-gradient(135deg, #fff5e8 0%, #ffe8d8 100%);
     border-radius: 10px;
     transition: all 0.3s ease;
 }
 
 .contact-item:hover {
-    background: #ff6b35;
+    background: linear-gradient(135deg, #ff6b35 0%, #e55a24 100%);
     color: white;
+    transform: translateY(-5px);
 }
 
 .contact-icon {
